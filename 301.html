@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" async></script>
+        <title>Mix n Match</title>
+    </head>
+<body>
+    <h1 class="page-title">Mix n Match</h1>
+    <div class="overlay-text visible">
+        Click to Start
+    </div>
+    <div ID="game-over-text" class="overlay-text">
+        GAME OVER
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div ID="victory-text" class="overlay-text">
+        VICTORY
+        <span class="overlay-text-small">Click to Restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">0</span>
+            </div> 
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/mario.png">
+            </div>
+        </div> 
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/mario.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/rebel.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/rebel.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/lamp.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/lamp.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/jason.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/jason.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/spiderman.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/spiderman.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/jake.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/jake.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/turtle.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/turtle.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/batman.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/batman.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/Skull.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/Skull.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/homer.png">
+            </div>
+        </div>  <div class="card">
+            <div class="card-back card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/corner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/corner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/corner.png">
+                <img class="back" src="Assets/Images/back.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="corner corner-top-left"
+                src="Assets/Images/fcorner.png"> 
+                <img class="corner corner-top-right"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-left"
+                src="Assets/Images/fcorner.png">
+                <img class="corner corner-bottom-right"
+                src="Assets/Images/fcorner.png">
+                <img class="card-value" src="Assets/Images/homer.png">
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
